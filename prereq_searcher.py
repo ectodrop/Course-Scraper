@@ -18,6 +18,9 @@ class Graph:
         if depth == max_depth: return
         code = code.upper()
         if "H3" not in code: code += "H3"
+        if code not in self.course_info:
+            print("Invalid Course Code")
+            return 
         if depth == 0:
             print(self.course_info[code][self._desc], self.course_info[code][self._pre_req_full])
         for course in self.course_info.keys():
