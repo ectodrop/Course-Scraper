@@ -8,4 +8,4 @@ while True:
     if course == "": break
     n = input("Enter a max depth to search: ")
     if n == "": break
-    g.find_out_connections(course, max_depth = int(n))
+    g.find_in_connections(course, max_depth = int(n))
